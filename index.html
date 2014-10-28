@@ -42,22 +42,34 @@
                     <h4>the new restaurant by shawn cirkiel<br />poolside at the radisson</h4>
                 </div>
 
-                <div><img src="images/chavez-1.jpg" alt=""></div>
+                <div class="single-item">
+                    <div><img src="images/chavez-1.jpg" alt=""></div>
+                    <div><img src="images/chavez-2.jpg" alt=""></div>
+                    <div><img src="images/chavez-3.jpg" alt=""></div>
+                    <div><img src="images/chavez-4.jpg" alt=""></div>
+                    <div><img src="images/chavez-5.jpg" alt=""></div>
+                    <div><img src="images/chavez-6.jpg" alt=""></div>
+                    <div><img src="images/chavez-7.jpg" alt=""></div>
+                    <div><img src="images/chavez-8.jpg" alt=""></div>
+                    <div><img src="images/chavez-9.jpg" alt=""></div>
+                    <div><img src="images/chavez-10.jpg" alt=""></div>
+                </div>
                 <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
             </div>
         </header>
 
         <!-- Address, map, hours -->
-        <section class="address row">
+        <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-
+            
+            <div class="row">
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
                 <div class="location columns large-4">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the Radisson Hotel
+                    at the <a href="#">Radisson Hotel</a>
                     111 east cesar chavez
                     austin, texas 78701
-                    512.478.2291
+                    <a href="tel:5124782291">512.478.2291</a>
                 </div>
 
                 <div class="map columns large-4">
@@ -67,55 +79,65 @@
 
                 <div class="hours columns large-4">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                    breakfast: 6:30–11am
-                    lunch: 11am–3pm
-                    limited menu: 3–5pm
-                    dinner: 5–10pm
+                    <span class="hours-label">breakfast: </span><span class="hours-value">6:30–11am</span>
+                    <span class="hours-label">lunch: </span><span class="hours-value">11am–3pm</span>
+                    <span class="hours-label">limited menu: </span><span class="hours-value">3–5pm</span>
+                    <span class="hours-label">dinner: </span><span class="hours-value">5–10pm</span>
                 </div>
+            </div>
 
         </section>
 
         <!-- Menu -->
         <section class="menu">
+
+
             <div class="row">
-                <h2>Menus</h2>
+                <div class="columns large-12">
+                    <h2>Menus</h2>
+                
+
+                    <!-- TODO add a foundation row wrapping the menu-sections -->
+
+                    <!-- TODO write the following HTML for each of the menus.
+                    
+
+                    There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. add a class of "menu-section" to each and an ID 'NAMEOFSECTION' where 'NAMEOFSECTION' is the section of the menu that this is, e.g. dinner, breakfast, etc.
+
+                    Give them a small-2 columns so they line up appropriately next to each other.
+
+                    One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
+
+                     -->
+
+
+                <div class="menu-section-item is-active" id="breakfast"><h3><a href="#">breakfast</a></h3></div>
+                <div class="menu-section-item" id="lunch"><h3><a href="#">lunch</a></h3></div>
+                <div class="menu-section-item" id="dinner"><h3><a href="#">dinner</a></h3></div>
+                <div class="menu-section-item" id="dessert"><h3><a href="#">dessert</a></h3></div>
+                <div class="menu-section-item" id="cocktails"><h3><a href="#">cocktails</a></h3></div>
+                <div class="menu-section-item" id="wine"><h3><a href="#">wine</a></h3></div>
+
+            </div>
             </div>
 
-            <!-- TODO add a foundation row wrapping the menu-sections -->
-
-                <!-- TODO write the following HTML for each of the menus.
-
-                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. add a class of "menu-section" to each and an ID 'NAMEOFSECTION' where 'NAMEOFSECTION' is the section of the menu that this is, e.g. dinner, breakfast, etc.
-
-                Give them a small-2 columns so they line up appropriately next to each other.
-
-                One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
-
-                -->
-                <div class="menu-section" id="NAMEOFSECTION">
-                    <h3>
-                        <a href="#">
-                            <!-- TODO name of menu section -->
-                        </a>
-                    </h3>
-                </div>
-
-
             <!-- TODO add a foundation row to wrap around this content -->
-                <div id="menu-section-content" class="menu-section-content">
-                    <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
+                <div class="row">
+                    <div id="menu-section-content" class="menu-section-content">
+                        <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
 
-                        <div class="menu-group">
-                            <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4></h4>
+                            <div class="menu-group">
+                                <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
+                                <h4></h4>
 
-                            <!-- TODO for each item on the menu, write a div.menu-item. -->
+                                <!-- TODO for each item on the menu, write a div.menu-item. -->
 
-                                <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
+                                    <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
 
-                                <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
-                        </div>
-                </div>
+                                    <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
+                            </div>
+                    </div>
+             </div>
 
         </section>
 
@@ -137,8 +159,11 @@
                     <!-- TODO write a div.social-links. -->
                         <!-- TODO inside that div, write a link that links to the social media links, and use the social media images in the image folder. -->
                             <!-- TODO Facebook http://facebook.com/ChavezATX -->
+                            <a href="http://facebook.com/ChavezATX"><img src="images/facebook.png" /></a>
                             <!-- TODO Twitter http://twitter.com/ChavezATX -->
+                            <a href="http://twitter.com/ChavezATX"><img src="images/twitter.png" /></a>
                             <!-- TODO Instagram http://instagram.com/ChavezATX -->
+                            <a href="http://instagram.com/ChavezATX"><img src="images/instagram.png" /></a>
                 </div>
 
                 <div class="press columns small-4">
@@ -159,12 +184,28 @@
 
         <!-- Our JS -->
         <!-- TODO link to our script.js file -->
-
+        
+        <script src="js/script.js"></script>
         <!-- Slick.js Slideshow -->
         <!-- TODO link to the slick.min.js file -->
+        <script src="js/slick.min.js"></script>
+
         <!-- TODO pass the div #slides into the .slick() function to make the slideshow work. you'll be able to tell if it works because the images will no longer be a stack; you'll only see the first one. -->
         <!-- TODO by default this slideshow JS doesn't autoplay. can you add the following settings into the slick() function? autoplay: true, autoplaySpeed: 2000, fade: true, cssEase: 'linear'. Check out the http://kenwheeler.github.io/slick/ website for examples and how to's! -->
+        <script type="text/javascript">
+            $(document).ready(function(){
 
+                $('.single-item').slick({
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                     fade: true,
+                     cssEase: 'linear'
+                });
+
+            });
+            
+
+        </script>
 
     </body>
 </html>
